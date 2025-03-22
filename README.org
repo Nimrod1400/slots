@@ -1,9 +1,9 @@
-Requirements:
+** Requirements:
 - C++17 compiler and it's standard library
 - CMake 3.11+
 - Make, Ninja or MSVC
 
-Build instructions:
+** Build instructions:
 
 Create build directory inside of project root and go there:
 #+BEGIN_SRC sh
