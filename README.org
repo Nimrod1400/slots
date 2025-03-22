@@ -1,0 +1,16 @@
+Requirements:
+- C++17 compiler and it's standard library
+- CMake
+- Make, Ninja or MSVC
+
+Build instructions:
+#+BEGIN_SRC sh
+  # Create build directory inside of project root and go there:
+  mkdir build && cd build
+  # Generete CMake build files:
+  # NOTE: this step may take significant amount of time since this is
+  #       the step where the Raylib library gets downloaded.
+  cmake .. -DCMAKE_BUILD_TYPE=Release
+  # Compile the project:
+  cmake --build . --config Release
+#+END_SRC
