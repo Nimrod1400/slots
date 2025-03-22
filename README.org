@@ -1,16 +1,38 @@
 Requirements:
 - C++17 compiler and it's standard library
-- CMake
+- CMake 3.11+
 - Make, Ninja or MSVC
 
 Build instructions:
+
+Create build directory inside of project root and go there:
 #+BEGIN_SRC sh
-  # Create build directory inside of project root and go there:
-  mkdir build && cd build
-  # Generete CMake build files:
-  # NOTE: this step may take significant amount of time since this is
-  #       the step where the Raylib library gets downloaded.
-  cmake .. -DCMAKE_BUILD_TYPE=Release
-  # Compile the project:
-  cmake --build . --config Release
+  $ mkdir build
+  $ cd build
 #+END_SRC
+
+Generete CMake build files:
+
+/NOTE: this step may take significant amount of time since this is/
+      /the step where the Raylib library gets downloaded./
+#+BEGIN_SRC sh
+  $ cmake .. -DCMAKE_BUILD_TYPE=Release
+#+END_SRC
+
+Compile the project:
+#+BEGIN_SRC sh
+  $ cmake --build . --config Release
+#+END_SRC
+
+Now you can run it!
+
+On Linux/Unix:
+#+BEGIN_SRC sh
+  $ ./slots
+#+END_SRC
+
+On Windows:
+#+BEGIN_SRC sh
+  $ ./slots.exe
+#+END_SRC
+
